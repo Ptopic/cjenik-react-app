@@ -2,12 +2,12 @@
 
 ### TODO LIST:
 
-- [ ] npm packages
+- [x] npm packages
 
-  - [ ] concurrently
-  - [ ] framer-motion
-  - [ ] react-icons
-  - [ ] react-router-dom
+  - [x] concurrently
+  - [x] framer-motion
+  - [x] react-icons
+  - [x] react-router-dom
 
 - [ ] loop thru PiceData and render it as pice components (cards)
   - [ ] add image to each pice component
