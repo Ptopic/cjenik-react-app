@@ -1,11 +1,6 @@
-import {
-	BrowserRouter as Router,
-	Route,
-	Routes,
-	NavLink,
-} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import AppContext, { AppContextProvider } from './context/AppContext';
+import { AppContextProvider } from './context/AppContext';
 
 import Header from './components/Header';
 import Switch from './components/Switch';

@@ -1,6 +1,6 @@
 import hrIcon from './images/hr.png';
 import engIcon from './images/eng.png';
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import AppContext from '../context/AppContext';
 
 function Header() {
@@ -18,9 +18,9 @@ function Header() {
 			<h1 className="logo">River</h1>
 			<button onClick={() => changeLanguage()} className="languageBtn">
 				{currentLanguage === 'hr' ? (
-					<img src={hrIcon} alt="lng" className='languageImg'></img>
+					<img src={hrIcon} alt="lng" className="languageImg"></img>
 				) : (
-					<img src={engIcon} alt="lng" className='languageImg'></img>
+					<img src={engIcon} alt="lng" className="languageImg"></img>
 				)}
 			</button>
 		</div>

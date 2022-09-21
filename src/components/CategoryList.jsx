@@ -1,21 +1,11 @@
-import { motion, AnimatePresence } from 'framer-motion';
-import { useContext, useEffect } from 'react';
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import Category from './Category';
 import AppContext from '../context/AppContext';
 
 function CategoryList() {
-	const {
-		PiceData,
-		piceActive,
-		HranaData,
-		hranaActive,
-		pice,
-		piceEng,
-		hrana,
-		hranaEng,
-		currentLanguage,
-	} = useContext(AppContext);
+	const { piceActive, pice, piceEng, hrana, hranaEng, currentLanguage } =
+		useContext(AppContext);
 	// Implement later
 	if (piceActive) {
 		return currentLanguage === 'hr' ? (

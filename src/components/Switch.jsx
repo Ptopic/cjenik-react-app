@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { useState, useContext } from 'react';
+import { useContext } from 'react';
 import AppContext from '../context/AppContext';
 
 function Switch() {

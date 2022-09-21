@@ -1,22 +1,12 @@
-import Card from './shared/Card';
 import AppContext from '../context/AppContext';
-import { useContext, useEffect } from 'react';
-import { BrowserRouter as Router, useParams } from 'react-router-dom';
+import { useContext } from 'react';
+import { useParams } from 'react-router-dom';
 
 import Switch from '../components/Switch';
 import HeaderContent from './HeaderContent';
 function ContentList() {
-	const {
-		PiceData,
-		piceActive,
-		HranaData,
-		hranaActive,
-		pice,
-		hrana,
-		piceEng,
-		hranaEng,
-		currentLanguage,
-	} = useContext(AppContext);
+	const { piceActive, pice, hrana, piceEng, hranaEng, currentLanguage } =
+		useContext(AppContext);
 	let { id } = useParams();
 
 	let eurRate = 7.5345;

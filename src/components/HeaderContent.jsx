@@ -1,14 +1,6 @@
-import arrow from './images/arrowEdited.png';
-import { MdArrowBackIos } from 'react-icons/md';
 import arrowLight from './images/arrow.svg';
 import arrowMedium from './images/arrowmd.png';
-import {
-	BrowserRouter as Router,
-	Switch,
-	Route,
-	Link,
-	useParams,
-} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 function HeaderContent() {
 	return (
 		<div className="flex-header-content">

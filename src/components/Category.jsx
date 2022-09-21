@@ -3,8 +3,7 @@ import { useContext } from 'react';
 import AppContext from '../context/AppContext';
 
 function Category({ item, img }) {
-	const { PiceData, piceActive, HranaData, hranaActive } =
-		useContext(AppContext);
+	const { piceActive } = useContext(AppContext);
 	return piceActive ? (
 		<Card>
 			<div className="left-category">
