@@ -1,0 +1,379 @@
+@font-face {
+    font-family: "Cambria";
+    src: url('./assets/fonts/cambria.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+/* Causten */
+/* Causten-Regular
+Causten-Light
+Causten-Bold */
+/* @font-face {
+    font-family: 'caustenbold';
+    src: url('./assets/fonts/webkits/causten-bold-webfont.woff2') format('woff2'),
+        url('./assets/fonts/webkits/causten-bold-webfont.woff') format('woff');
+    font-weight: bold;
+} */
+
+/* 
+@font-face {
+    font-family: 'caustenregular';
+    src: url('./assets/fonts/webkits/causten-regular-webfont.woff2') format('woff2'),
+        url('./assets/fonts/webkits/causten-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+
+/* @font-face {
+    font-family: 'caustenbold';
+    src: url('./assets/fonts/webkits/causten-bold-webfont.woff2') format('woff2'),
+        url('./assets/fonts/webkits/causten-bold-webfont.woff') format('woff');
+    font-weight: bold;
+} */
+
+/* @font-face {
+    font-family: 'caustenregular';
+    src: url('./assets/fonts/webkits/causten-regular-webfont.woff2') format('woff2'),
+        url('./assets/fonts/webkits/causten-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+/* @font-face {
+    font-family: 'sofia_prolight';
+    src: url('./assets/fonts/webkits/sofia_pro_light_az-webfont.woff2') format('woff2'),
+        url('./assets/fonts/webkits/sofia_pro_light_az-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+@font-face {
+    font-family: 'caustenlight';
+    src: url('./assets/fonts/causten-light-webfont.woff2') format('woff2'),
+        url('./assets/fonts/causten-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+:root {
+    --bg: #161616;
+    --item: #303135;
+    --item-icon: rgba(76, 76, 76, 0.8);
+    --text: #ffffff;
+    --text-light: #dddddd;
+    --light-white: #f3f2f2;
+    --gold: #efc900;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background: var(--bg);
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 1.6rem;
+    font-family: "caustenbold", sans-serif;
+}
+
+button {
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.container {
+    background: var(--bg);
+    color: white;
+    font-family: "caustenbold", sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'caustenlight', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+}
+
+a.light {
+    text-decoration: none;
+    color: black;
+    font-family: 'caustenlight', sans-serif;
+    /* transition: color 1s linear; */
+}
+
+.logo {
+    font-family: "Cambria";
+    margin-top: 10rem;
+    text-align: center;
+    font-size: 3.7em;
+    color: var(--gold);
+    letter-spacing: 5px;
+    font-weight: 400;
+}
+
+.logo::after {
+    background-image: url("./components/images/swirl2.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0;
+    display: block;
+    width: 180px;
+    height: 30px;
+    content: "";
+
+}
+
+.flex {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-header-content {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.languageBtn {
+    padding: 0;
+    position: absolute;
+    right: 4rem;
+}
+
+.languageImg {
+    width: 5rem;
+}
+
+.arrowIconBack {}
+
+.arrowHeader-link {
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+    align-self: center;
+}
+
+
+
+
+/* Hrana i piće */
+.groups {
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.1em;
+    font-family: sans-serif;
+    color: var(--text-light);
+}
+
+.groups p {
+    position: relative;
+    margin-top: 3rem;
+    padding: 2rem 3rem;
+}
+
+p.active::after {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    left: 45%;
+    bottom: 0;
+    border-radius: 10px;
+    background-color: var(--gold);
+}
+
+
+/* All items */
+
+.card {
+    width: 82%;
+    height: 80px;
+    color: #333;
+    margin: 1.4rem 0;
+    background: var(--item);
+    display: inline-flex;
+    border-radius: 23px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+}
+
+
+
+.left-category {
+    width: 45%;
+}
+
+.right-category {
+    width: 55%;
+    display: flex;
+    align-items: center;
+}
+
+.category-container {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.filler {
+    height: 150px;
+    width: 100%;
+}
+
+.category-flex {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.category-list-link {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.category-text {
+    display: inline-block;
+    align-self: center;
+    text-align: center;
+    width: 100%;
+    color: var(--text);
+    font-size: 1.5rem;
+    font-family: "caustenregular", sans-serif;
+}
+
+/* Content */
+.content-container {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.left {
+    margin-left: 1rem;
+    width: 70%;
+    position: relative;
+}
+
+.right {
+    margin-right: 1rem;
+    width: 30%;
+    position: relative;
+}
+
+.content-card {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 89%;
+    height: 95px;
+    color: #333;
+    margin: 1.4rem 0;
+    background: var(--item);
+    border-radius: 23px;
+}
+
+.content-list-text {
+    position: relative;
+    color: var(--text);
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: "caustenregular", sans-serif;
+}
+
+.quantity {
+    position: absolute;
+    left: 0;
+    font-size: 1.6rem;
+    font-weight: 100;
+    top: 3rem;
+    color: var(--text-light);
+}
+
+.content-list-text-price {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: var(--text);
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: "caustenregular", sans-serif;
+}
+
+.price-eur {
+    color: var(--text-light);
+    position: absolute;
+    right: 0;
+    font-size: 1.6rem;
+    font-weight: 200;
+    top: 3rem;
+}
+
+.content-container h1 {
+    font-weight: 300;
+    font-size: 2.1rem;
+    place-self: center;
+}
+
+
+/* Footer */
+
+.footer {}
+
+.footer-icons {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.facebook-icon {
+    color: var(--item-icon);
+}
+
+.instagram-icon {
+    color: var(--item-icon);
+    margin-left: 3rem;
+}
+
+.footer-warning-container {
+    margin: 2rem;
+}
+
+.footer-warning-container p {
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, 0.4);
+    text-align: center;
+}
+
+.copyright-container {
+    height: 4rem;
+    background-color: rgb(24, 24, 24);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright-container p {
+    font-size: 1.5rem;
+    text-align: center;
+}

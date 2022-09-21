@@ -1,205 +1,382 @@
 const PiceData = [
 	{
-		'topli napitci': {
-			img: 'img',
-			content: {
-				Kava: {
-					price: '12',
-				},
-				'Kava mlijeko ili šlag': {
-					price: '14',
-				},
-				'Kava mlijeko ili šlag velika': {
-					price: '14',
-				},
-				Capuccino: {
-					price: '16',
-				},
-				'Bijela kava': {
-					price: '15',
-				},
-				Nescafe: {
-					price: '15',
-				},
-				Čaj: {
-					price: '12',
-				},
-				Mlijeko: {
-					price: '15',
-				},
+		id: 1,
+		name: 'Topli napitci',
+		img: 'img1',
+		content: [
+			{
+				name: 'Kava',
+				price: '12',
+				kol: 'šal',
+				eur: '1',
 			},
-		},
-		'prirodni sokovi': {
-			img: 'img',
-			content: {
-				Naranća: {
-					price: '19',
-				},
-				Jabuka: {
-					price: '19',
-				},
-				Ribizla: {
-					price: '19',
-				},
-				Gusti: {
-					price: '19',
-				},
-				'Prirodna limunada': {
-					price: '23',
-				},
-				'Prirodna narančada': {
-					price: '28',
-				},
-				'Ledeni čaj': {
-					price: '19',
-				},
-				Cedevita: {
-					price: '17',
-				},
+			{
+				name: 'Kava mlijeko ili šlag',
+				price: '14',
+				kol: 'šal',
+				eur: '1',
 			},
-		},
-		'gazirani sokovi': {
-			img: 'img',
-			content: {
-				Špeci: {
-					price: '21',
-				},
-				"Pepsi, Miranda, 7'up": {
-					price: '19',
-				},
-				Tonic: {
-					price: '19',
-				},
-				'Bitter lemon': {
-					price: '19',
-				},
-				'Pipi, Nara': {
-					price: '19',
-				},
-				Cocta: {
-					price: '19',
-				},
-				Orangina: {
-					price: '20',
-				},
-				Limona: {
-					price: '20',
-				},
+			{
+				name: 'Kava mlijeko ili šlag velika',
+				price: '14',
+				kol: 'šal',
+				eur: '1',
 			},
-		},
-		'mineralna voda': {
-			img: 'img',
-			content: {
-				'Mineralna voda': {
-					price: '12',
-				},
-				'Mineralna senzacija': {
-					price: '17',
-				},
-				'Mineralna voda': {
-					price: '20',
-				},
-				'Prirodna voda': {
-					price: '15',
-				},
-				'Prirodna voda': {
-					price: '22',
-				},
+			{
+				name: 'Capuccino',
+				price: '16',
+				kol: 'šal',
+				eur: '1',
 			},
-		},
-		pivo: {
-			img: 'img',
-			content: {
-				Karlovačko: {
-					price: '17',
-				},
-				'Karlovačko crno': {
-					price: '22',
-				},
-				'Karlovačko radler': {
-					price: '22',
-				},
-				'Točeno pivo (Karlovačko)': {
-					price: '18',
-				},
-				'Točeno pivo (Karlovačko)': {
-					price: '25',
-				},
-				'Točeno pivo (Heineken)': {
-					price: '20',
-				},
-				'Točeno pivo (Heineken)': {
-					price: '30',
-				},
-				Heineken: {
-					price: '22',
-				},
-				'Heineken bezalkoholni': {
-					price: '22',
-				},
-				'Cider Strongbow': {
-					price: '22',
-				},
-				'Krombacher Pils': {
-					price: '20',
-				},
-				'Krombacher Weizen': {
-					price: '30',
-				},
+			{
+				name: 'Bijela kava',
+				price: '15',
+				kol: 'šal',
+				eur: '1',
 			},
-		},
-		aperitivi: {
-			img: 'img',
-			content: {
-				Rakija: {
-					price: '16',
-				},
-				Pelinkovac: {
-					price: '20',
-				},
-				Stock: {
-					price: '18',
-				},
-				Amaro: {
-					price: '16',
-				},
-				Vodka: {
-					price: '13',
-				},
-				Gin: {
-					price: '19',
-				},
-				'Orahovac, Brandy': {
-					price: '16',
-				},
+			{
+				name: 'Nescafe',
+				price: '15',
+				kol: 'šal',
+				eur: '1',
 			},
-		},
-		'strana alkoholna pica': {
-			img: 'img',
-			content: {
-				'Johhny Walker': {
-					price: '20',
-				},
-				"Jack Daniel's": {
-					price: '25',
-				},
-				Chivas: {
-					price: '30',
-				},
-				Jagermeister: {
-					price: '20',
-				},
-				Campari: {
-					price: '18',
-				},
-				Martell: {
-					price: '25',
-				},
-				Ballantines: {
-					price: '20',
-				},
+			{
+				name: 'Čaj',
+				price: '12',
+				kol: 'šal',
+				eur: '1',
 			},
-		},
+			{
+				name: 'Mlijeko',
+				price: '15',
+				kol: '0.20l',
+				eur: '1',
+			},
+		],
+	},
+	{
+		id: 2,
+		name: 'Prirodni sokovi',
+		img: 'img2',
+		content: [
+			{
+				name: 'Naranča',
+				price: '19',
+				kol: '0.20l',
+				eur: '1',
+			},
+			{
+				name: 'Jabuka',
+				price: '19',
+				kol: '0.20l',
+				eur: '1',
+			},
+			{
+				name: 'Ribizla',
+				price: '19',
+				kol: '0.20l',
+				eur: '1',
+			},
+			{
+				name: 'Gusti',
+				price: '19',
+				kol: '0.20l',
+				eur: '1',
+			},
+			{
+				name: 'Prirodna limunada',
+				price: '23',
+				kol: '0.20l',
+				eur: '1',
+			},
+			{
+				name: 'Prirodna narančada',
+				price: '28',
+				kol: '0.20l',
+				eur: '1',
+			},
+			{
+				name: 'Ledeni čaj',
+				price: '19',
+				kol: '0.20l',
+				eur: '1',
+			},
+			{
+				name: 'Cedevita',
+				price: '17',
+				kol: '0.20l',
+				eur: '1',
+			},
+		],
+	},
+	{
+		id: 3,
+		name: 'Gazirani sokovi',
+		img: 'img3',
+		content: [
+			{
+				name: 'Špeci',
+				price: '21',
+				kol: '0.33l',
+				eur: '1',
+			},
+			{
+				name: 'Pepsi, Miranda, 7`up',
+				price: '19',
+				kol: '0.25l',
+				eur: '1',
+			},
+			{
+				name: 'Tonic',
+				price: '19',
+				kol: '0.25l',
+				eur: '1',
+			},
+			{
+				name: 'Bitter lemon',
+				price: '19',
+				kol: '0.25l',
+				eur: '1',
+			},
+			{
+				name: 'Pipi, Nara',
+				price: '19',
+				kol: '0.25l',
+				eur: '1',
+			},
+			{
+				name: 'Cocta',
+				price: '19',
+				kol: '0.25l',
+				eur: '1',
+			},
+			{
+				name: 'Orangina',
+				price: '20',
+				kol: '0.25l',
+				eur: '1',
+			},
+			{
+				name: 'Limona',
+				price: '20',
+				kol: '0.25l',
+				eur: '1',
+			},
+		],
+	},
+	{
+		id: 4,
+		name: 'Mineralna voda',
+		img: 'img4',
+		content: [
+			{
+				name: 'Mineralna voda',
+				price: '12',
+				kol: '0.25l',
+				eur: '1',
+			},
+			{
+				name: 'Mineralna senzacija',
+				price: '17',
+				kol: '0.25l',
+				eur: '1',
+			},
+			{
+				name: 'Mineralna voda',
+				price: '20',
+				kol: '0.75l',
+				eur: '1',
+			},
+			{
+				name: 'Prirodna voda',
+				price: '15',
+				kol: '0.33l',
+				eur: '1',
+			},
+			{
+				name: 'Prirodna voda',
+				price: '22',
+				kol: '0.75l',
+				eur: '1',
+			},
+		],
+	},
+	{
+		id: 5,
+		name: 'Pivo',
+		img: 'img5',
+		content: [
+			{
+				name: 'Karlovačko',
+				price: '17',
+				kol: '0.33l',
+				eur: '1',
+			},
+			{
+				name: 'Karlovačko crno',
+				price: '22',
+				kol: '0.50l',
+				eur: '1',
+			},
+			{
+				name: 'Karlovačko Radler',
+				price: '22',
+				kol: '0.33l',
+				eur: '1',
+			},
+			{
+				name: 'Točeno pivo (Karlovačko)',
+				price: '18',
+				kol: '0.30l',
+				eur: '1',
+			},
+			{
+				name: 'Točeno pivo (Karlovačko)',
+				price: '25',
+				kol: '0.50l',
+				eur: '1',
+			},
+			{
+				name: 'Točeno pivo (Heineken)',
+				price: '20',
+				kol: '0.25l',
+				eur: '1',
+			},
+			{
+				name: 'Točeno pivo (Heineken)',
+				price: '30',
+				kol: '0.50l',
+				eur: '1',
+			},
+			{
+				name: 'Heineken',
+				price: '22',
+				kol: '0.33l',
+				eur: '1',
+			},
+			{
+				name: 'Heineken bezalkoholni',
+				price: '22',
+				kol: '0.33l',
+				eur: '1',
+			},
+			{
+				name: 'Cider Strongbow',
+				price: '22',
+				kol: '0.33l',
+				eur: '1',
+			},
+			{
+				name: 'Krombacher Pils',
+				price: '20',
+				kol: '0.33l',
+				eur: '1',
+			},
+			{
+				name: 'Krombacher Weizen',
+				price: '30',
+				kol: '0.50l',
+				eur: '1',
+			},
+		],
+	},
+	{
+		id: 6,
+		name: 'Aperitivi',
+		img: 'img6',
+		content: [
+			{
+				name: 'Rakija',
+				price: '16',
+				kol: '0.03l',
+				eur: '1',
+			},
+			{
+				name: 'Pelinkovac',
+				price: '20',
+				kol: '0.03l',
+				eur: '1',
+			},
+			{
+				name: 'Stock',
+				price: '18',
+				kol: '0.03l',
+				eur: '1',
+			},
+			{
+				name: 'Amaro',
+				price: '16',
+				kol: '0.03l',
+				eur: '1',
+			},
+			{
+				name: 'Vodka',
+				price: '?',
+				kol: '0.03l',
+				eur: '1',
+			},
+			{
+				name: 'Gin',
+				price: '?',
+				kol: '0.03l',
+				eur: '1',
+			},
+			{
+				name: 'Orahovac, Brandy',
+				price: '16',
+				kol: '0.03l',
+				eur: '1',
+			},
+		],
+	},
+	{
+		id: 7,
+		name: 'Strana alkoholna pića',
+		img: 'img7',
+		content: [
+			{
+				name: 'Johhny Walker',
+				price: '20',
+				kol: '0.03l',
+				eur: '1',
+			},
+			{
+				name: 'Jack Daniel`s',
+				price: '25',
+				kol: '0.03l',
+				eur: '1',
+			},
+			{
+				name: 'Chivas',
+				price: '30',
+				kol: '0.03l',
+				eur: '1',
+			},
+			{
+				name: 'Jagermeister',
+				price: '20',
+				kol: '0.03l',
+				eur: '1',
+			},
+			{
+				name: 'Campari',
+				price: '18',
+				kol: '0.03l',
+				eur: '1',
+			},
+			{
+				name: 'Martell',
+				price: '25',
+				kol: '0.03l',
+				eur: '1',
+			},
+			{
+				name: 'Ballantines',
+				price: '20',
+				kol: '0.03l',
+				eur: '1',
+			},
+		],
 	},
 ];
 
