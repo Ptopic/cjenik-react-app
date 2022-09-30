@@ -1,6 +1,7 @@
 import AppContext from '../context/AppContext';
 import { useContext } from 'react';
 import { useParams } from 'react-router-dom';
+import { motion, AnimatePresence } from 'framer-motion';
 
 import Switch from '../components/Switch';
 import HeaderContent from './HeaderContent';
@@ -41,21 +42,29 @@ function ContentList() {
 				<Switch />
 				<div className="content-container">
 					<h1>{data.name}</h1>
-					{piceNames.map((el, index) => (
-						<div className="content-card">
-							<div className="left">
-								<h3 className="content-list-text">{el}</h3>
-								<p className="quantity">{piceQnt[index]}</p>
-							</div>
+					<AnimatePresence>
+						{piceNames.map((el, index) => (
+							<motion.div
+								className="content-card"
+								initial={{ opacity: 0 }}
+								animate={{ opacity: 1 }}
+								exit={{ opacity: 0 }}
+								transition={{ duration: 1, times: [0, 0.4, 1] }}
+							>
+								<div className="left">
+									<h3 className="content-list-text">{el}</h3>
+									<p className="quantity">{piceQnt[index]}</p>
+								</div>
 
-							<div className="right">
-								<h3 className="content-list-text-price">
-									{picePrices[index] + ' kn'}
-								</h3>
-								<p className="price-eur">{picePricesEur[index] + ' €'}</p>
-							</div>
-						</div>
-					))}
+								<div className="right">
+									<h3 className="content-list-text-price">
+										{picePrices[index] + ' kn'}
+									</h3>
+									<p className="price-eur">{picePricesEur[index] + ' €'}</p>
+								</div>
+							</motion.div>
+						))}
+					</AnimatePresence>
 				</div>
 			</div>
 		);
@@ -83,21 +92,29 @@ function ContentList() {
 				<Switch />
 				<div className="content-container">
 					<h1>{data.name}</h1>
-					{hranaNames.map((el, index) => (
-						<div className="content-card">
-							<div className="left">
-								<h3 className="content-list-text">{el}</h3>
-								<p className="quantity">{hranaQnt[index]}</p>
-							</div>
+					<AnimatePresence>
+						{hranaNames.map((el, index) => (
+							<motion.div
+								className="content-card"
+								initial={{ opacity: 0 }}
+								animate={{ opacity: 1 }}
+								exit={{ opacity: 0 }}
+								transition={{ duration: 1, times: [0, 0.4, 1] }}
+							>
+								<div className="left">
+									<h3 className="content-list-text">{el}</h3>
+									<p className="quantity">{hranaQnt[index]}</p>
+								</div>
 
-							<div className="right">
-								<h3 className="content-list-text-price">
-									{hranaPrices[index] + ' kn'}
-								</h3>
-								<p className="price-eur">{hranaPricesEur[index] + ' €'}</p>
-							</div>
-						</div>
-					))}
+								<div className="right">
+									<h3 className="content-list-text-price">
+										{hranaPrices[index] + ' kn'}
+									</h3>
+									<p className="price-eur">{hranaPricesEur[index] + ' €'}</p>
+								</div>
+							</motion.div>
+						))}
+					</AnimatePresence>
 				</div>
 			</div>
 		);

@@ -10,6 +10,8 @@ export const AppContextProvider = ({ children }) => {
 	const [piceActive, setPiceActive] = useState(true);
 	const [currentLanguage, setCurrentLanguage] = useState('hr');
 
+	const [isPreLoading, setIsPreLoading] = useState(true);
+
 	let pice = PiceData;
 	let hrana = HranaData;
 
