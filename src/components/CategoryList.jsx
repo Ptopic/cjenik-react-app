@@ -1,15 +1,15 @@
-import { useContext, useEffect } from 'react';
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import Category from './Category';
 import AppContext from '../context/AppContext';
 
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 function CategoryList() {
 	const { piceActive, pice, piceEng, hrana, hranaEng, currentLanguage } =
 		useContext(AppContext);
 
-	// ----- Pice section -----
+	// NOTE ----- Pice section -----
 
 	if (piceActive) {
 		return currentLanguage === 'hr' ? (
@@ -68,7 +68,7 @@ function CategoryList() {
 				})}
 			</div>
 		);
-		// ----- Hrana section -----
+		// NOTE ----- Hrana section -----
 	} else {
 		return currentLanguage === 'hr' ? (
 			<div className="category-container">

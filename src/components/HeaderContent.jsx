@@ -7,9 +7,7 @@ function HeaderContent() {
 			<Link to={'/'} className="arrowHeader-link">
 				<img src={arrowLight} alt="" className="arrowIconBack" />
 				<img src={arrowMedium} alt="" style={{ visibility: 'hidden' }} />
-				{/* <MdArrowBackIos size={30} className="arrowIconBack" /> */}
 			</Link>
-			{/* <button>lng icon</button> */}
 		</div>
 	);
 }

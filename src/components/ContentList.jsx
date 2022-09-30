@@ -18,7 +18,6 @@ function ContentList() {
 	};
 
 	if (piceActive) {
-		// CHange pice to pice eng if language is english
 		let data;
 		if (currentLanguage === 'hr') {
 			data = pice[id - 1];

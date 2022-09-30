@@ -9,7 +9,6 @@
   - [x] react-icons
   - [x] react-router-dom
 
-- [ ] loop thru PiceData and render it as pice components (cards)
-  - [ ] add image to each pice component
-    - [ ] do same for food
-- [ ] todo
+- [x] loop thru PiceData and render it as pice components (cards)
+- [x] add image to each pice component
+- [x] do same for food

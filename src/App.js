@@ -9,27 +9,24 @@ import PiceData from './data/PiceData';
 import HranaData from './data/HranaData';
 import ContentList from './components/ContentList';
 import Footer from './components/Footer';
-import {
-	motion,
-	AnimatePresence,
-	useAnimationControls,
-	m,
-} from 'framer-motion';
+import { motion, AnimatePresence, useAnimationControls } from 'framer-motion';
 
 function App() {
 	let controls = useAnimationControls();
 
 	useEffect(() => {
 		setTimeout(() => {
-			// TODO Preload images
+			/* TODO
+			 * Preload images
+			 */
 
-			// Loading animation set
+			/* NOTE Loading animation set*/
 			controls.set({
 				clipPath: 'circle(100% at 50% 50%)',
 				transition: { duration: 1 },
 			});
 
-			// Start loading animation (make circle smaller)
+			/* NOTE Start loading animation (make circle smaller) */
 			controls.start({
 				clipPath: 'circle(0% at 50% 50%)',
 			});
@@ -181,7 +178,7 @@ function App() {
 
 							{PiceData.map((pice) => {
 								return (
-									// Get id with url params and check piceData array with that id in component
+									/* NOTE Get id with url params and check piceData array with that id in component */
 									<Route
 										key={pice.id}
 										path={`/pice/:id`}
@@ -192,7 +189,7 @@ function App() {
 
 							{HranaData.map((hrana) => {
 								return (
-									// Get id with url params and check hranaData array with that id in component
+									/* NOTE Get id with url params and check hranaData array with that id in component */
 									<Route
 										key={hrana.id}
 										path={`/hrana/:id`}
