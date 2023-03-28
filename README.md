@@ -1,4 +1,4 @@
-## Cijenik app made with <3 and react
+## Cjenik app made with <3 and react
 
 ### TODO LIST:
 
